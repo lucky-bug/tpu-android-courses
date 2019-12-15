@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import ru.tpu.courses.lab1.Lab1Activity;
 import ru.tpu.courses.lab2.Lab2Activity;
 import ru.tpu.courses.lab3.Lab3Activity;
+import ru.tpu.courses.lab4.Lab4Activity;
 
 /**
  * {@link android.app.Activity} - объект, который представляет отдельный экран, видимый пользователю.
@@ -25,8 +26,6 @@ import ru.tpu.courses.lab3.Lab3Activity;
  * <li>Вёрстка UI. Сохранение состояния</li>
  * <li>RecyclerView, взаимодействие между экранами. Memory Cache</li>
  * <li>Взаимодействие с файловой системой, SQLite</li>
- * <li>Запросы к сети, многопоточность</li>
- * <li>Render Loop, Canvas, анимации</li>
  * </ul>
  * P.S. Читать JavaDoc в студии удобнее, нажимая Ctrl+Q
  */
@@ -81,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
         findViewById(R.id.lab2).setOnClickListener((v) -> startActivity(Lab2Activity.newIntent(this)));
         findViewById(R.id.lab3).setOnClickListener((v) -> startActivity(Lab3Activity.newIntent(this)));
-        findViewById(R.id.lab4).setOnClickListener((v) -> { });
+        findViewById(R.id.lab4).setOnClickListener((v) -> startActivity(Lab4Activity.newIntent(this)));
         findViewById(R.id.lab5).setOnClickListener((v) -> { });
         findViewById(R.id.lab6).setOnClickListener((v) -> { });
     }
